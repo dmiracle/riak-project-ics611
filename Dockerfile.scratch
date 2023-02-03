@@ -1,0 +1,10 @@
+FROM ubuntu:latest
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt-get update && apt-get -y install make cmake \
+    build-essential libssl-dev perl \
+    libncurses5-dev libncursesw5-dev \
+    sed tar git wget
+
+RUN apt-get install -y xsltproc fop ament-cmake-xmllint vim
+
+ADD otp_src_25.2.1.tar.gz /opt

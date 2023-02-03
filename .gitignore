@@ -1,0 +1,5 @@
+.docker-env
+.env
+venv
+*.tar
+*.tar.gz
