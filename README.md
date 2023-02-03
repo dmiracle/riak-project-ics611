@@ -19,7 +19,7 @@ docker run -v $(pwd)/work:/work -p 8087:8087 raik
 
 Run container in interactive mode with a riak volume:
 ```
-docker run -v $(pwd)/riak:/opt/riak -v $(pwd)/work:/work -p 8087:8087 raik
+docker run -v $(pwd)/riak:/opt/riak -v $(pwd)/work:/work -p 8087:8087 -p 8098:8098 raik
 ```
 
 ## Run on erlang docker image
